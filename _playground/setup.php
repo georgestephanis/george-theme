@@ -2,10 +2,10 @@
 /**
  * Some setup scripts to run when initializing a Playground environment.
  *
- * @package ThemeRepoTemplate
+ * @package GeorgeTheme
  */
 
-namespace ThemeRepoTemplate\Setup;
+namespace GeorgeTheme\Setup;
 
 /**
  * Set and flush rewrite rules.

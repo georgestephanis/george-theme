@@ -1,7 +1,7 @@
 {
-    "name": "theme-repo-template",
+    "name": "george-theme",
     "version": "1.0.0",
-    "description": "A starter theme for FSE.  Will generally be overwritten.",
+    "description": "A theme for george",
     "author": {
         "name": "George Stephanis",
         "url": "https://georgestephanis.wordpress.com"
@@ -12,9 +12,9 @@
         "theme"
     ],
     "prettier": "@wordpress/prettier-config",
-    "homepage": "https://github.com/georgestephanis/theme-repo-template",
-    "repository": "https://github.com/georgestephanis/theme-repo-template",
-    "bugs": "https://github.com/georgestephanis/theme-repo-template/issues",
+    "homepage": "https://github.com/georgestephanis/george-theme",
+    "repository": "https://github.com/georgestephanis/george-theme",
+    "bugs": "https://github.com/georgestephanis/george-theme/issues",
     "private": false,
     "engines": {
         "node": ">=20.0",
