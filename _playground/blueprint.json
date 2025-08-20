@@ -1,0 +1,54 @@
+{
+	"$schema": "https://playground.wordpress.net/blueprint-schema.json",
+	"landingPage": "/",
+	"preferredVersions": {
+		"php": "latest",
+		"wp": "latest"
+	},
+	"features": {
+		"networking": true
+	},
+	"steps": [
+		{
+			"step": "installPlugin",
+			"pluginData": {
+				"resource": "wordpress.org/plugins",
+				"slug": "create-block-theme"
+			},
+			"options": {
+				"activate": true
+			}
+		},
+		{
+			"step": "installTheme",
+			"themeData": {
+				"resource": "url",
+				"url": "https://github-proxy.com/proxy/?repo=georgestephanis/theme-repo-template"
+			},
+			"options": {
+				"activate": true
+			}
+		},
+		{
+			"step": "resetData"
+		},
+		{
+			"step": "importThemeStarterContent"
+		},
+		{
+			"step": "runPHP",
+			"code": "<?php require '/wordpress/wp-load.php';include_once get_theme_file_path('_playground/setup.php');"
+		},
+		{
+			"step": "defineWpConfigConsts",
+			"consts": {
+				"WP_DEBUG": true,
+				"WP_DEBUG_DISPLAY": true
+			}
+		},
+		{
+			"step": "login",
+			"username": "admin"
+		}
+	]
+}
