@@ -26,7 +26,7 @@ $nav_menus       = array();
 
 if ( ! empty( $starter_content['nav_menus'] ) && is_array( $starter_content['nav_menus'] ) ) {
     foreach ( $starter_content['nav_menus'] as $slug => $properties ) {
-        $nav_menu = wp_get_nav_menu_object( $slug );
+        $nav_menu = wp_get_nav_menu_object( "{$slug}-menu" );
         if ( $nav_menu ) {
             $nav_menus[ $slug ] = $nav_menu->term_id;
         }
